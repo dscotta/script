@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Display Hostname
+echo "Hostname:"
 # Display CPU usage
 echo "CPU Usage:"
 top -bn1 | grep "Cpu(s)" | awk '{print "CPU Usage: " $2 + $4 "%"}'
